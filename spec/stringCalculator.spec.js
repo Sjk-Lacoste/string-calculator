@@ -2,7 +2,7 @@ let str = require('../src/stringCalculator');
 
 let strCalc = new str;
 
-console.log(strCalc.Add("-//1\n-2,101%-3"));
+// console.log(strCalc.Add("-//1\n-2,101%-3"));
 
 describe("StringCalculator()", () => {
 	it("should should return zero if the string is empty", () => {

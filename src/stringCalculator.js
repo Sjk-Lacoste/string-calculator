@@ -17,7 +17,7 @@ module.exports = class StringCalculator {
 
     Add(string) {
         let sum = 0;
-        let str = string.match(this.reg, '');
+        let str = string.match(this.reg);
         let negatives = this.extractNegative(string);
         
         try {
