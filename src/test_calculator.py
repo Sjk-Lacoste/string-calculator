@@ -26,9 +26,10 @@ def test_diff_delims():
     assert add("//;\n1;2") == 3
 
 # Test if there are negatives and throw an error
-with pytest.raises(Exception) as err:
-	assert add("//;\n-1;2,-3")
-assert str(err.value) == "Negatives not allowed: -1,-3,"    
+def test_check_negatives():
+    with pytest.raises(Exception) as err:
+        assert add("//;\n-1;2,-3")
+        assert str(err.value) == "Negatives not allowed: -1,-3,"    
 
 # Test if any number bigger than 1000 will be ignored
 def test_more_than_thousand():
