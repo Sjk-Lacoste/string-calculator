@@ -26,7 +26,7 @@ defer==1.0.6
 defusedxml==0.6.0
 devscripts===2.17.12ubuntu1.1
 distro-info===0.18ubuntu0.18.04.1
-Django==2.2.5
+Django==2.2.8
 entrypoints==0.3
 Flask==0.12.2
 Flask-BabelEx==0.9.3
